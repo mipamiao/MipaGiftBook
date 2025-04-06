@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:hint="页码"
+            android:textColorHint="@color/hintcolor"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:id="@+id/skip_pc">
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/skip_cancel"
+                android:text="取消">
+            </Button>
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/skip_jump"
+                android:text="跳转">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
