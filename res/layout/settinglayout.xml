@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="4"
+        android:background="@color/SettingBgColor"
+        android:rowCount="2">
+        <Button
+            android:id="@+id/LoadFromSD"
+            android:layout_gravity="fill"
+            android:text="导入"
+            android:textSize="20dp"
+            android:textColor="@color/SettingFontColor"
+            android:background="@color/noVi"
+            >
+        </Button>
+    <Button
+        android:id="@+id/SaveToSD"
+        android:layout_gravity="fill"
+        android:text="导出"
+        android:textSize="20dp"
+        android:textColor="@color/SettingFontColor"
+        android:background="@color/noVi"
+        >
+    </Button>
+    <Button
+        android:id="@+id/LoadFromNet"
+        android:layout_gravity="fill"
+        android:text="从网络导入"
+        android:autoSizeMaxTextSize="20dp"
+        android:textColor="@color/SettingFontColor"
+        android:background="@color/noVi"
+        >
+    </Button>
+    <Button
+        android:id="@+id/SaveToNet"
+        android:layout_gravity="fill"
+        android:text="导出至网络"
+        android:autoSizeMaxTextSize="20dp"
+        android:textColor="@color/SettingFontColor"
+        android:background="@color/noVi"
+        >
+    </Button>
+
+    </GridLayout>

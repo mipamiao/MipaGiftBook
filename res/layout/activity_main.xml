@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/search_text"
+                android:layout_width="0dp"
+                android:layout_height="50sp"
+                android:layout_weight="4"
+                android:background="@color/white"
+                android:hint="请输入姓名或首字母缩写"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/hintcolor"></EditText>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="Search"
+                android:text="搜索">
+
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="LastSearch"
+                android:text="上一个">
+
+            </Button>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="NextSearch"
+                android:text="下一个">
+
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ShowArea"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="9"
+        android:background="@color/design_default_color_primary_variant">
+
+        <LinearLayout
+            android:id="@+id/post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/libo_back"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/libo_back"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/libo_back"
+            android:orientation="horizontal"></LinearLayout>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="300dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/noVi"
+            android:onClick="NextPage">
+
+        </Button>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="300dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/noVi"
+            android:onClick="LastPage">
+
+        </Button>
+
+        <Button
+            android:id="@+id/PC"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/noVi"
+            android:onClick="Skip"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/PageCodeColor"
+            android:textSize="20sp"></Button>
+
+        <Button
+            android:id="@+id/Setting"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:text="设置"
+            android:onClick="ToSetting"
+            android:background="@color/noVi"
+            android:textAlignment="center"
+            android:textColor="@color/PageCodeColor"
+            android:textSize="20sp"></Button>
+    </RelativeLayout>
+
+
+</LinearLayout>
